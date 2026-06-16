@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,8 @@
             <img src="./images/logo.png" alt="Logo">
             <div class="logoText">Grocer's Store</div>
         </div>
+
+        <div class="menu-btn" id="menuBtn">☰</div>
 
         <div class="row2">
             <a href="./home.html">Home</a>
@@ -209,7 +212,7 @@
         <div class="footer-content">
             <h3>Resources</h3>
             <ul>
-                <li>Recipe Directory</li>
+                <li>Organic Products</li>
                 <li>Help Center</li>
                 <li>Privacy Policy</li>
                 <li>Terms & Conditions</li>
@@ -223,6 +226,15 @@
             duration: 1500, /* smooth runtime for transitions */
             once: true      /* runs animation only once per scroll down */
         });
+
+        // Navbar Toggler
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.querySelector('.row2');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
     </script>
 </body>
+
 </html>

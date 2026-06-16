@@ -45,6 +45,13 @@
      gap: 25px;
  }
 
+ .menu-btn {
+     display: none;
+     font-size: 30px;
+     cursor: pointer;
+     color: #2EAD4B;
+ }
+
  /* Navigation Links */
 
  .row2 a {
@@ -186,6 +193,7 @@
  .content.clamped {
      display: -webkit-box;
      -webkit-line-clamp: 3;
+     line-clamp: 3;
      -webkit-box-orient: vertical;
      overflow: hidden;
      padding-bottom: 0;
@@ -286,4 +294,64 @@
      border: none;
      border-top: 1px solid #ddd;
      margin-top: 50px;
+ }
+
+ /* Added Media Query for 350px to 1400px */
+ @media screen and (min-width: 350px) and (max-width: 1400px) {
+     .container1 {
+         padding: 15px 30px;
+     }
+
+     .foot {
+         padding: 50px 40px;
+     }
+
+     .blogHeader h2 {
+         font-size: 45px;
+     }
+
+     .blogs {
+         gap: 20px;
+     }
+     .blogHeader p{
+        margin-bottom: 30px;
+     }
+     .blogHeader p,
+     .blogHeader h2{
+        color: white;
+     }
+
+     /* Mobile Navbar Adjustments */
+     .container1 {
+         padding: 15px 20px;
+         position: sticky;
+         top: 0;
+         width: 100%;
+     }
+
+     .menu-btn {
+         display: block;
+     }
+
+     .row2 {
+         display: none;
+         flex-direction: column;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         width: 100%;
+         background: white;
+         padding: 20px;
+         gap: 15px;
+         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+         text-align: center;
+     }
+
+     .row2.active {
+         display: flex;
+     }
+
+     .order-btn {
+         margin-top: 10px;
+     }
  }
