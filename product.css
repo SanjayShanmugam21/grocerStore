@@ -227,25 +227,48 @@ button {
         flex-wrap: nowrap;
         overflow-x: auto;
         justify-content: flex-start;
+        gap: 15px;
         padding-bottom: 10px;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
     }
-    .productImg {
-    width: 75%;
-    height: 100px;
-    object-fit: cover;
-    margin: 10px 0;
-}
 
     .containers1::-webkit-scrollbar {
-        display: none; 
+        display: none;
     }
 
     .card {
-        min-width: 280px;
+        width: 220px;
+        min-width: 220px;
+        padding: 12px;
     }
-} /* Footer */
+
+    .productImg {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .card h4 {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+ /* Footer */
 
  .foot {
      display: flex;
